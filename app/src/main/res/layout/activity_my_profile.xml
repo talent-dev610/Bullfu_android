@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MyProfileActivity"
+    android:background="@color/red_main"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/setting_profile"
+        android:textColor="@color/white"
+        android:textSize="22sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="36dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/white_round"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp">
+
+                <EditText
+                    android:id="@+id/edt_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="116dp"
+                    android:padding="12dp"
+                    android:hint="@string/current_user_name"
+                    android:textColorHint="@color/black"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:drawablePadding="8dp"
+                    android:drawableEnd="@drawable/ic_user"
+                    android:background="@drawable/round_white"
+                    android:singleLine="true"
+                    android:inputType="text"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/round_white"
+                    android:paddingStart="12dp">
+
+                    <com.rilixtech.CountryCodePicker
+                        android:id="@+id/ccp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        app:ccp_defaultNameCode="us"
+                        app:ccp_hideNameCode="true"
+                        app:ccp_textSize="14sp"/>
+
+                    <EditText
+                        android:id="@+id/edt_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:hint="@string/current_mobile"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:drawablePadding="8dp"
+                        android:drawableEnd="@drawable/ic_mobile"
+                        android:background="@null"
+                        android:singleLine="true"
+                        android:inputType="phone"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/btn_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="64dp"
+                    android:layout_marginTop="36dp"
+                    android:text="@string/update"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:background="@drawable/round_red"
+                    android:shadowColor="@color/grey"/>
+
+                <!--<View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>-->
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_centerHorizontal="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imv_profile"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="end"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_user"/>
+
+
+
+            <ImageView
+                android:id="@+id/imv_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_circle_add" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

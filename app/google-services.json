@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "54180571383",
+    "project_id": "bullhu",
+    "storage_bucket": "bullhu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54180571383:android:1d4a7133264c055e8c0bf2",
+        "android_client_info": {
+          "package_name": "com.bullhu.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54180571383-uejm196n7a0esqvabmv4tj5q6nmpv450.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bullhu.android",
+            "certificate_hash": "1d17f8254b5565a37640af22358da8a0d09fc805"
+          }
+        },
+        {
+          "client_id": "54180571383-d85cfl03t1e5120turi6mi47qmtiaj4e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByAMbjRrkAfEvudD1iDyhFjQoVtTMFs9A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54180571383-d85cfl03t1e5120turi6mi47qmtiaj4e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

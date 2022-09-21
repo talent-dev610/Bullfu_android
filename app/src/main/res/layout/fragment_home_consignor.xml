@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.consignor.HomeConsignorFragment"
+    android:background="@drawable/blue_gradient"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/logo_bar_white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/request_delivery"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/txv_pick_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="16dp"
+                android:padding="10dp"
+                android:drawablePadding="4dp"
+                android:hint="@string/pick_terminal"
+                android:textColorHint="@color/black"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:drawableEnd="@drawable/ic_pick_location"
+                android:background="@drawable/round_white"/>
+
+            <TextView
+                android:id="@+id/txv_drop_off"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                android:drawablePadding="4dp"
+                android:hint="@string/dropoff_location"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:drawableEnd="@drawable/ic_pick_location"
+                android:background="@drawable/round_white"/>
+
+            <TextView
+                android:id="@+id/txv_return_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:drawablePadding="4dp"
+                android:hint="@string/empty_return"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:drawableEnd="@drawable/ic_pick_location"
+                android:background="@drawable/round_white"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColorHint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:drawablePadding="4dp"
+                    android:textSize="14sp"
+                    android:hint="@string/freight_size"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:inputType="textWebEditText"
+                    android:drawableEnd="@drawable/ic_dimensions"
+                    android:background="@drawable/round_white"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColorHint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:drawablePadding="4dp"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:hint="@string/freight_weight"
+                    android:inputType="textWebEditText"
+                    android:textColor="@color/black"
+                    android:drawableEnd="@drawable/ic_weight"
+                    android:background="@drawable/round_white"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txv_tdo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                android:drawablePadding="4dp"
+                android:text="@string/order_ready"
+                android:textColor="@color/black"
+                android:drawableEnd="@drawable/ic_drop_down"
+                android:background="@drawable/round_white"/>
+
+            <TextView
+                android:id="@+id/txv_pickup_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                android:drawablePadding="4dp"
+                android:text="@string/preferred_time"
+                android:textColor="@color/black"
+                android:drawableEnd="@drawable/ic_timer"
+                android:background="@drawable/round_white"/>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="276dp"
+               android:layout_marginBottom="36dp"
+               android:layout_marginTop="12dp">
+
+               <fragment
+                   android:id="@+id/frag_map"
+                   android:name="com.google.android.gms.maps.SupportMapFragment"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent" />
+
+               <ImageView
+                   android:id="@+id/transparent_image"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:src="@color/transparent" />
+
+           </RelativeLayout>
+
+           <!-- <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/frag_map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="176dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="36dp" />-->
+
+            <!--com.google.android.gms.maps.SupportMapFragment-->
+
+
+            <Button
+                android:id="@+id/btn_request"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="36dp"
+                android:textColor="@color/white"
+                android:text="@string/request_cotainer_delivery"
+                android:background="@color/red_main"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

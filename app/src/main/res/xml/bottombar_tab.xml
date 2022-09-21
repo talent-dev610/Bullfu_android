@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs xmlns:android="http://schemas.android.com/apk/res/android">
+    <tab
+        id="@+id/tab_home"
+        title="Home"
+        barColorWhenSelected="@color/tab_bg"
+        icon="@mipmap/ic_tab_home"/>
+
+    <tab
+        id="@+id/tab_history"
+        title="History"
+        barColorWhenSelected="@color/tab_bg"
+        icon="@mipmap/ic_tab_history"/>
+
+    <tab
+        id="@+id/tab_notification"
+        title="Notification"
+        barColorWhenSelected="@color/tab_bg"
+        icon="@mipmap/ic_tab_notification"/>
+
+    <tab
+        id="@+id/tab_settings"
+        title="Settings"
+        barColorWhenSelected="@color/tab_bg"
+        icon="@mipmap/ic_tab_settings"/>
+
+
+</tabs>

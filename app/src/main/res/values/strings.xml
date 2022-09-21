@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">Bullhu</string>
+
+    <string name="place_api_key">AIzaSyByAMbjRrkAfEvudD1iDyhFjQoVtTMFs9A</string>
+    <string name="paystack_publicKey">pk_test_73b8b59192e20e3595be84d62333d6e8c3f36590</string>
+    <string name="str_back_one_more_end">Pressing once more will be terminated.</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="login_to">Login To \nEnter App</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_password_">Forgot Password</string>
+    <string name="reset_pass">Reset Password</string>
+    <string name="current_pass">Current Password</string>
+    <string name="new_pass">New Password</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="enter_current_password">Enter Current Password</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="not_match_password">Not match password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="already_login">Already have an account? <u>Login</u></string>
+    <string name="full_name">Full Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="driver">Driver</string>
+    <string name="consignor">Consignor</string>
+    <string name="input_email">Input Email</string>
+    <string name="input_password">Input Password</string>
+    <string name="take_photo">Please take photo</string>
+    <string name="input_full_name">Input Full Name</string>
+    <string name="input_mobile_number">Input Mobile Number</string>
+    <string name="register_to">Hello! \nRegister to\nget started</string>
+    <string name="setting_profile">Setting Up \nYour Profile</string>
+    <string name="current_user_name">Current User Name</string>
+    <string name="current_mobile">Current User Mobile Number</string>
+    <string name="update">Update</string>
+    <string name="request_delivery">Request freight delivery</string>
+
+    <string name="pick_terminal">Pick up location/port/terminal</string>
+    <string name="empty_return">Empty (container) return location</string>
+    <string name="freight_size">Container/Freight size (eg: 40.00 Feet) </string>
+    <string name="freight_weight">Container/Freight weight (eg: 50.00 KGS) </string>
+    <string name="preferred_time">Preferred pick up time</string>
+    <string name="request_cotainer_delivery">Request Container/Freight Delivery</string>
+    <string name="available_delivery">Available freight for delivery</string>
+    <string name="container_size">Container/Freight size:</string>
+    <string name="container_weight">Container&#47;Freight weight:</string>
+    <string name="pickup_time">Preferred pick up time: </string>
+    <string name="pickup_at">Pick up at:</string>
+    <string name="dropoff_at">Drop off at:</string>
+    <string name="return_location">Empty &#x00028;container&#x00029; return location: </string>
+    <string name="order_ready">Terminal Delivery Order &#40;TDO&#41; is ready ? </string>
+    <string name="accept_pay">Accept/Pay</string>
+    <string name="accept">Accept</string>
+    <string name="history">History</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="amount_spent">Amount spent</string>
+    <string name="transaction_id">Transaction ID:</string>
+    <string name="date">Date:</string>
+    <string name="reject">Decline</string>
+    <string name="notifications">Notifications</string>
+    <string name="view_notification">View Your Notification</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="pickup_location">Pick up location</string>
+    <string name="dropoff_location">Drop off location</string>
+    <string name="empty_return_location">Empty container/freight \nreturn location</string>
+    <string name="delivery_complete">Delivery Complete</string>
+    <string name="input_price">Please input price</string>
+    <string name="send">Send</string>
+    <string name="settings">Settings</string>
+    <string name="my_profile">My Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="about_us">About Us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="logout">Logout</string>
+    <string name="card_details">Card Details</string>
+    <string name="card_number">Card Number</string>
+    <string name="card_expiry">Card Expiry (6/23)</string>
+    <string name="card_ccv">CVV</string>
+    <string name="currency">₦</string>
+    <string name="account_settings">Your Account Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <string name="select_TDO">Please select Terminal Delivery Order(TDO) is ready?</string>
+
+    <string-array name="TDO_array">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string name="enter_pickup_location">Enter pick up location</string>
+    <string name="enter_dropoff_location">Enter drop off location</string>
+    <string name="enter_empty_location">Enter empty (container) return location</string>
+    <string name="enter_size">Enter container/freight size</string>
+    <string name="enter_weight">Enter container/freight weight</string>
+    <string name="select_preferred_time">Select preferred pick up time</string>
+    <string name="enter_user_name">Enter user name</string>
+    <string name="enter_mobile_number">Enter mobile number</string>
+    <string name="delivery_detail">Delivery detail</string>
+    <string name="consignor_accept">Will be available to deliver your Container/Freight for the price of</string>
+    <string name="consignor_pickup_time">You will be contacted with a pick up time.</string>
+
+
+</resources>

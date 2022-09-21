@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SettingsFragment"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="14dp"
+        android:text="@string/settings"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_grey"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txv_my_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/my_profile"
+                android:drawablePadding="16dp"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/ic_profile"
+                android:background="@drawable/white_round_settings"/>
+
+            <TextView
+                android:id="@+id/txv_change_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:text="@string/change_password"
+                android:drawablePadding="16dp"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/ic_locked_password"
+                android:background="@drawable/white_round_settings"/>
+
+            <TextView
+                android:id="@+id/txv_about_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:text="@string/about_us"
+                android:drawablePadding="16dp"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/ic_about_us"
+                android:background="@drawable/white_round_settings"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_grey"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txv_privacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/privacy_policy"
+                android:drawablePadding="16dp"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/ic_privacy"
+                android:background="@drawable/white_round_settings"/>
+
+            <TextView
+                android:id="@+id/txv_contact_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:text="@string/contact_us"
+                android:drawablePadding="16dp"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/ic_contact_us"
+                android:background="@drawable/white_round_settings"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_grey"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txv_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/logout"
+                android:drawablePadding="16dp"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/ic_logout"
+                android:background="@drawable/white_round_settings"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
